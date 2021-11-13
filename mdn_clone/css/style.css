@@ -1,0 +1,116 @@
+@charset 'utf-8';
+
+/* common */
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 10px;
+}
+button {
+  background: none;
+  border: none;
+  outline: none;
+}
+a {
+  text-decoration: none;
+  color: #1b1b1b;
+}
+/* settings */
+
+/* first header */
+
+.logo::before {
+  display: block;
+  content: "";
+  width: 206px;
+  height: 62px;
+
+  background: url(/mdn_clone/img/MDN_Web_Docs.svg) center/contain no-repeat;
+}
+
+.gnb-cont {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 24px 12px;
+}
+.lnb-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lnb-cont button {
+  font-size: 1.6rem;
+}
+
+.lnb-cont li:not(.logo) {
+  margin-left: 70px;
+}
+
+.lnb-cont li:not(.logo)::before {
+  display: inline-block;
+  content: "";
+  background: url(/mdn_clone/img/triangle.svg);
+  width: 12px;
+  height: 12px;
+  transform: rotate(90deg);
+}
+
+.mdn-search {
+  width: 304.31px;
+  height: 38px;
+}
+
+/* main */
+main {
+  margin: 0 auto;
+}
+.scnd-header-cont {
+  box-sizing: border-box;
+  padding: 75px 48px 72px;
+  background-color: #83bfff;
+  height: 291.49px;
+  margin: 0 auto;
+}
+.mdn-title {
+  margin: 0 136.5px 48px;
+  display: inline-block;
+  letter-spacing: 2.5px;
+  font-size: 30px;
+  color: #fff;
+  line-height: 1.75;
+  background-color: #000;
+  width: 750px;
+  height: 46.5px;
+}
+.scnd-header-cont ul {
+  position: relative;
+  /* top: 0;
+  left: 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1023px;
+  font-size: 1.6rem;
+}
+.scnd-header-cont a {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 225px;
+  height: 50px;
+  text-align: left;
+  padding: 12px 0;
+  border-bottom: 1px solid #1b1b1b;
+}
+.scnd-header-cont li::after {
+  display: inline-block;
+  content: "";
+  background: url(/mdn_clone/img/arrow.svg);
+  width: 16px;
+  height: 16px;
+  transform: rotate(90deg);
+  position: absolute;
+  /* left: 1000px; */
+}
