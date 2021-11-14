@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>MDN Clone Web</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -20,8 +26,12 @@
               <li><button>Feedback</button></li>
             </ul>
           </nav>
-          <input type="search" class="mdn-search" placeholder="Site
-          search...(Press \"/\" to focus"/>
+          <input
+            type="search"
+            class="mdn-search"
+            placeholder="Site
+          search...()"
+          />
         </section>
       </header>
       <main>
@@ -33,10 +43,12 @@
             <li><a href="#">Developer Tools</a></li>
           </ul>
         </section>
-        <div class="cont-mdn-docs">
+        <div class="cont-mdn-docs link-effect">
           <section class="mdn-main-docs">
             <h2>Hacks Blog</h2>
-            <a href="#">Read more at hacks.mozilla.org </a>
+            <a href="#" class="mdn-main-link"
+              >Read more at hacks.mozilla.org
+            </a>
             <article class="mdn-article">
               <h3>
                 <a href="#">Hacks Decoded: Thomas Park, Founder of Codepip</a>
@@ -103,10 +115,10 @@
           </section>
 
           <aside class="mdn-aside">
-            <h2>Help improve MDN Web Docs</h2>
+            <h2>Help improve MMM Web Docs</h2>
             <article>
               <p>
-                All parts of MDN (docs and the site itself) are created by an
+                All parts of MMM (docs and the site itself) are created by an
                 open community of developers. Please join us! Pick one of these
                 ways to help:
               </p>
@@ -120,30 +132,45 @@
           </aside>
         </div>
       </main>
-      <footer>
-        <h2><img src="" alt="MDN Home" /><a href="#"></a></h2>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <section>
-          <ul>
-            <li>MDN</li>
-            <li></li>
-            <li></li>
+      <footer class="footer-link footer-wrapper">
+        <section class="footer-container">
+          <h2 class="footer-logo">
+            <img src="/mdn_clone/img/MDN_none.svg" alt="" /><a href="#"></a>
+          </h2>
+
+          <ul class="footer-link footer-link-left">
+            <li><a href="#">Web Technologies</a></li>
+            <li><a href="#">Learn Web Development</a></li>
+            <li><a href="#">About MDN</a></li>
+            <li><a href="#">Feedback</a></li>
           </ul>
-          <ul>
-            <li>Mozilla</li>
-            <li></li>
-            <li></li>
+          <ul class="footer-link footer-link-right">
+            <li><a href="#">About</a></li>
+            <li><a href="#">MDN Web Docs Store</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Firefox</a></li>
+          </ul>
+
+          <ul class="footer-sns sns-mmm">
+            <li>MMM</li>
+            <li><a href="#" target="_blank"></a></li>
+            <li><a href="#" target="_blnk"></a></li>
+          </ul>
+          <ul class="footer-sns sns-mmzzll">
+            <li>MMZZLL</li>
+            <li><a href="#" target="_blank"></a></li>
+            <li><a href="#" target="_blank"></a></li>
+          </ul>
+
+          <small class="footer-copyright">
+            &copy;2005-2021 Mozilla and individual contributors. Content is
+            available under these licenses.
+          </small>
+
+          <ul class="footer-legal">
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookies</a></li>
           </ul>
         </section>
       </footer>

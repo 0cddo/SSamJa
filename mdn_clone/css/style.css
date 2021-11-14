@@ -15,6 +15,15 @@ button {
 a {
   text-decoration: none;
   color: #1b1b1b;
+  font-size: 16px;
+}
+p {
+  font-size: 16px;
+}
+h1,
+h2,
+h3 {
+  font-family: "Noto Serif", serif;
 }
 /* settings */
 
@@ -64,6 +73,7 @@ a {
 }
 
 /* main */
+
 main {
   margin: 0 auto;
 }
@@ -121,19 +131,17 @@ main {
   display: flex;
   justify-content: space-between;
   padding: 24px;
-  margin: 48px 0;
+  margin: 48px 132.5px;
   box-sizing: border-box;
   /* grid-gap? */
   gap: 24px;
-}
-.cont-mdn-docs {
   line-height: 1.2;
 }
 .mdn-main-docs {
   width: 619px;
   /* display block 왜? */
   display: block;
-  flex-basis: 75%;
+  flex-basis: 65%;
   /* vertical-align: baseline; */
 }
 .mdn-main-docs h2 {
@@ -144,30 +152,151 @@ main {
   color: #005282;
 }
 .mdn-article {
-  border-bottom: 0.3px solid rgba(200, 200, 200, 0.507);
+  border-bottom: 1px solid #f4f4f4;
   margin-bottom: 12px;
   line-height: 1.6;
+  padding-right: 103px;
 }
 .mdn-article h3 a {
   font-size: 31px;
-  color: #005282;
-  font-weight: 400;
 }
-.mdn-article p {
-  font-size: 16px;
-}
+
 .mdn-article em {
   font-size: 14px;
 }
 
 .mdn-aside {
-  max-width: 407px;
+  max-width: 464px;
 }
 .mdn-aside h2 {
   flex-basis: 35%;
   box-sizing: border-box;
   display: block;
   font-size: 31px;
+  margin-bottom: 24px;
+}
+.mdn-aside p {
+  line-height: 1.5;
+}
+.mdn-aside li {
+  margin-bottom: 12px;
+  border-bottom: 1px solid #f4f4f4;
+}
+/* main common */
+.link-effect a {
+  color: #005282;
+  font-weight: 400;
+}
+.link-effect a:hover {
+  text-decoration: underline;
+}
+/* footer */
+.footer-wrapper {
+  font-size: 16px;
+  background-color: #1b1b1b;
+  padding: 48px 24px;
+  box-sizing: border-box;
+}
+footer a,
+footer small,
+footer .footer-sns {
+  color: #fff;
 }
 
-/* footer */
+.footer-link a:hover {
+  text-decoration: underline;
+}
+.footer-container {
+  display: grid;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.footer-logo {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  width: 200px;
+  filter: invert(100%);
+  margin-bottom: 24px;
+}
+.footer-link li {
+  padding: 10px 0;
+}
+.footer-link-left {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.footer-link-right {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.footer-sns {
+  height: 44px;
+  margin: 16px 0;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.footer-sns li:first-child {
+  margin-right: 10px;
+}
+.sns-mmm {
+  grid-column: 1/3;
+  grid-row: 3/5;
+}
+/* ++ li태그 입력할 것!!! */
+.sns-mmm li:nth-child(2)::before {
+  display: inline-block;
+  content: url(/mdn_clone/img/twitter.svg);
+  background: center/cover;
+  filter: invert(1);
+  width: 18px;
+  height: 18px;
+  padding-left: 6px;
+}
+.sns-mmm li:nth-child(3)::before {
+  display: inline-block;
+  content: url(/mdn_clone/img/gitHub.svg);
+  background: center/cover;
+  filter: invert(1);
+  width: 18px;
+  height: 18px;
+  padding-left: 6px;
+}
+.sns-mmzzll {
+  grid-column: 2/3;
+  grid-row: 3/5;
+}
+.sns-mmzzll li:nth-child(2)::before {
+  display: inline-block;
+  content: url(/mdn_clone/img/twitter.svg);
+  background: center/cover;
+  filter: invert(1);
+  width: 18px;
+  height: 18px;
+  padding-left: 6px;
+}
+.sns-mmzzll li:nth-child(3)::before {
+  display: inline-block;
+  content: url(/mdn_clone/img/instagram.445373fc.svg);
+  background: center/cover;
+  filter: invert(1);
+  width: 18px;
+  height: 18px;
+  padding-left: 6px;
+}
+.footer-copyright {
+  grid-column: 1/3;
+  grid-row: 5/7;
+  margin: 50px 0;
+  padding-top: 30px;
+  box-sizing: border-box;
+  border-top: 1px solid #fff;
+}
+.footer-legal {
+  grid-column: 1/3;
+  grid-row: 7/8;
+  display: flex;
+}
+.footer-legal li {
+  padding-right: 20px;
+}
