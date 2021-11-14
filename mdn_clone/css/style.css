@@ -114,3 +114,60 @@ main {
   position: absolute;
   /* left: 1000px; */
 }
+
+/* main-second */
+
+.cont-mdn-docs {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  margin: 48px 0;
+  box-sizing: border-box;
+  /* grid-gap? */
+  gap: 24px;
+}
+.cont-mdn-docs {
+  line-height: 1.2;
+}
+.mdn-main-docs {
+  width: 619px;
+  /* display block 왜? */
+  display: block;
+  flex-basis: 75%;
+  /* vertical-align: baseline; */
+}
+.mdn-main-docs h2 {
+  font-size: 39px;
+}
+.mdn-main-docs a {
+  font-size: 16px;
+  color: #005282;
+}
+.mdn-article {
+  border-bottom: 0.3px solid rgba(200, 200, 200, 0.507);
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+.mdn-article h3 a {
+  font-size: 31px;
+  color: #005282;
+  font-weight: 400;
+}
+.mdn-article p {
+  font-size: 16px;
+}
+.mdn-article em {
+  font-size: 14px;
+}
+
+.mdn-aside {
+  max-width: 407px;
+}
+.mdn-aside h2 {
+  flex-basis: 35%;
+  box-sizing: border-box;
+  display: block;
+  font-size: 31px;
+}
+
+/* footer */
