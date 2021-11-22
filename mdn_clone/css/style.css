@@ -1,11 +1,14 @@
 @charset 'utf-8';
 
 /* common */
+* {
+  box-sizing: border-box;
+}
 html,
 body {
   width: 100%;
   height: 100vh;
-  font-size: 10px;
+  font-size: 16px;
 }
 button {
   background: none;
@@ -25,6 +28,7 @@ h2,
 h3 {
   font-family: "Noto Serif", serif;
 }
+
 /* settings */
 
 /* first header */
@@ -51,7 +55,7 @@ h3 {
   align-items: center;
 }
 .lnb-cont button {
-  font-size: 1.6rem;
+  font-size: 16px;
 }
 
 .lnb-cont li:not(.logo) {
@@ -74,18 +78,16 @@ h3 {
 
 /* main */
 
-main {
-  margin: 0 auto;
-}
-.scnd-header-cont {
-  box-sizing: border-box;
-  padding: 75px 48px 72px;
+/* main .scnd-header-cont {
+  width: 1680px;
   background-color: #83bfff;
   height: 291.49px;
+  padding: 75px 48px 72px;
+}
+main .scnd-header-wrapper {
   margin: 0 auto;
 }
-.mdn-title {
-  margin: 0 136.5px 48px;
+main .mdn-title {
   display: inline-block;
   letter-spacing: 2.5px;
   font-size: 30px;
@@ -95,18 +97,15 @@ main {
   width: 750px;
   height: 46.5px;
 }
-.scnd-header-cont ul {
+main .scnd-header-cont ul {
   position: relative;
-  /* top: 0;
-  left: 0; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 1023px;
   font-size: 1.6rem;
 }
-.scnd-header-cont a {
-  box-sizing: border-box;
+main .scnd-header-cont a {
   display: inline-block;
   width: 225px;
   height: 50px;
@@ -114,7 +113,7 @@ main {
   padding: 12px 0;
   border-bottom: 1px solid #1b1b1b;
 }
-.scnd-header-cont li::after {
+main .scnd-header-cont li::after {
   display: inline-block;
   content: "";
   background: url(/mdn_clone/img/arrow.svg);
@@ -122,10 +121,59 @@ main {
   height: 16px;
   transform: rotate(90deg);
   position: absolute;
-  /* left: 1000px; */
+} */
+
+/* main-header */
+main .scnd-header-wrapper {
+  width: 100vw;
+  height: 290px;
+  padding: 75px 48px 72px;
+  background-color: #83bfff;
+}
+main .scnd-header-content {
+  max-width: 63em;
+  margin: 0 auto;
+}
+main .mdn-title {
+  margin: 0 136.5px 48px;
+  display: block;
+  font-size: 2.4rem;
+  color: #fff;
+  background-color: #000;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 0.035rem;
+  padding: 0 24px;
+}
+main .scnd-header-content ul {
+  display: flex;
+  justify-content: center;
 }
 
-/* main-second */
+main .scnd-header-content li {
+  width: 256px;
+  padding: 12px 0;
+  position: relative;
+}
+
+main .scnd-header-content a {
+  border-bottom: 2px solid #1b1b1b;
+  padding: 12px 0;
+}
+
+main .scnd-header-content a::after {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(/mdn_clone/img/arrow.svg);
+  transform: rotate(90deg);
+  /* position: absolute;
+  top: 19px;
+  right: 6px; */
+}
+/* main-blog */
 
 .cont-mdn-docs {
   display: flex;
