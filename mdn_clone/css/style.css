@@ -26,11 +26,22 @@ p {
 h1,
 h2,
 h3 {
-  font-family: "Noto Serif", serif;
+  font-family: "Bree Serif", serif;
 }
 
 /* settings */
+@media screen and (max-width: 1200px) and(min-width: 1025px) {
+  .gnb-cont {
+    display: block;
+  }
+}
 
+@media screen and (max-width: 1024px) and (min-width: 770px) {
+}
+
+/* sandwich button */
+@media screen and (max-width: 769px) {
+}
 /* first header */
 
 .logo::before {
@@ -39,10 +50,13 @@ h3 {
   width: 206px;
   height: 62px;
 
-  background: url(/mdn_clone/img/MDN_Web_Docs.svg) center/contain no-repeat;
+  background: url(/img/MDN_none.svg) center/contain no-repeat;
 }
 
 .gnb-cont {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -56,26 +70,42 @@ h3 {
 }
 .lnb-cont button {
   font-size: 16px;
+  font-weight: bold;
 }
 
 .lnb-cont li:not(.logo) {
-  margin-left: 70px;
+  margin-left: 60px;
 }
 
 .lnb-cont li:not(.logo)::before {
   display: inline-block;
   content: "";
-  background: url(/mdn_clone/img/triangle.svg);
+  background: url(/img/triangle.svg);
   width: 12px;
   height: 12px;
   transform: rotate(90deg);
 }
 
 .mdn-search {
-  width: 304.31px;
-  height: 38px;
+  box-sizing: content-box;
+  width: 329px;
+  height: 24px;
+  padding: 6px 12px;
+  border: 2px solid black;
+  margin-right: 57px;
+  font-size: 16px;
 }
-
+.search-mark::after {
+  position: absolute;
+  top: 58px;
+  right: 160px;
+  display: block;
+  content: "";
+  background: url(/img/search.svg) center/contain;
+  width: 21px;
+  height: 21px;
+  /* z-index: 10; */
+}
 /* main */
 
 /* main .scnd-header-cont {
@@ -131,12 +161,12 @@ main .scnd-header-wrapper {
   background-color: #83bfff;
 }
 main .scnd-header-content {
-  max-width: 63em;
+  max-width: 65em;
   margin: 0 auto;
 }
 main .mdn-title {
   margin: 0 136.5px 48px;
-  display: block;
+  display: inline-block;
   font-size: 2.4rem;
   color: #fff;
   background-color: #000;
@@ -145,6 +175,7 @@ main .mdn-title {
   line-height: 1.2;
   letter-spacing: 0.035rem;
   padding: 0 24px;
+  box-sizing: content-box;
 }
 main .scnd-header-content ul {
   display: flex;
@@ -167,7 +198,7 @@ main .scnd-header-content a::after {
   content: "";
   width: 16px;
   height: 16px;
-  background-image: url(/mdn_clone/img/arrow.svg);
+  background-image: url(/img/arrow.svg);
   transform: rotate(90deg);
   /* position: absolute;
   top: 19px;
@@ -294,7 +325,7 @@ footer .footer-sns {
 /* ++ li태그 입력할 것!!! */
 .sns-mmm li:nth-child(2)::before {
   display: inline-block;
-  content: url(/mdn_clone/img/twitter.svg);
+  content: url(/img/twitter.svg);
   background: center/cover;
   filter: invert(1);
   width: 18px;
@@ -303,7 +334,7 @@ footer .footer-sns {
 }
 .sns-mmm li:nth-child(3)::before {
   display: inline-block;
-  content: url(/mdn_clone/img/gitHub.svg);
+  content: url(/img/gitHub.svg);
   background: center/cover;
   filter: invert(1);
   width: 18px;
@@ -316,7 +347,7 @@ footer .footer-sns {
 }
 .sns-mmzzll li:nth-child(2)::before {
   display: inline-block;
-  content: url(/mdn_clone/img/twitter.svg);
+  content: url(/img/twitter.svg);
   background: center/cover;
   filter: invert(1);
   width: 18px;
@@ -325,7 +356,7 @@ footer .footer-sns {
 }
 .sns-mmzzll li:nth-child(3)::before {
   display: inline-block;
-  content: url(/mdn_clone/img/instagram.445373fc.svg);
+  content: url(/img/instagram.445373fc.svg);
   background: center/cover;
   filter: invert(1);
   width: 18px;
