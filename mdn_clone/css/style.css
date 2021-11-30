@@ -32,7 +32,7 @@ h3 {
 /* settings */
 @media screen and (max-width: 1200px) {
   .scnd-header-content .mdn-title {
-    color: red;
+    display: block;
   }
 }
 
