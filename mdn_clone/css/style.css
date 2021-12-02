@@ -31,8 +31,13 @@ h3 {
 
 /* settings */
 @media screen and (max-width: 1200px) {
-  .scnd-header-content .mdn-title {
+  /* .scnd-header-content .mdn-title {
     display: block;
+  }
+   */
+  .header {
+    display: flex;
+    flex-flow: column;
   }
 }
 
@@ -43,7 +48,7 @@ h3 {
 @media screen and (max-width: 769px) {
 }
 /* first header */
-.header {
+header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,7 +59,7 @@ h3 {
   padding: 36px 24px 12px;
   box-sizing: content-box;
 }
-header .logo {
+.logo {
   display: block;
   width: 210px;
   height: 63px;
